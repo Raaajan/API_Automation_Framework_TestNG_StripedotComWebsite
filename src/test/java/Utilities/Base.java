@@ -16,7 +16,7 @@ public class Base {
     public static Properties prop;
    @BeforeSuite
     public void SetUp(){
-       String propertiesFilePath = System.getProperty("user.dir")+"\\src\\main\\resources\\Config.properties";
+       String propertiesFilePath = System.getProperty("user.dir")+"\\src\\test\\resources\\Config.properties";
        prop = new Properties();
        FileInputStream propfile;
        try {

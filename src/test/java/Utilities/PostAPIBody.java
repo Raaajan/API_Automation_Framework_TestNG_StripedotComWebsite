@@ -14,4 +14,13 @@ public class PostAPIBody {
         return createProductBody;
     }
 
+    public static HashMap createCouponBody(){
+        HashMap<String, Object> createCouponBody = new HashMap<>();
+        createCouponBody.put("name","try250");
+        createCouponBody.put("duration","repeating");
+        createCouponBody.put("duration_in_months",3);
+        createCouponBody.put("percent_off","25.30");
+
+        return createCouponBody;
+    }
 }
