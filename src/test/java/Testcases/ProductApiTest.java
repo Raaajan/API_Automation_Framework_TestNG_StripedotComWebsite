@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 import java.util.HashMap;
 
-//@Listeners(ExtentListeners.class)
+@Listeners(ExtentListeners.class)
 public class ProductApiTest extends Base {
 
     public static Object product_id;
@@ -21,6 +21,7 @@ public class ProductApiTest extends Base {
 
     @Test
     public void getAllProductDetailsWithValidEndPoint() throws IOException {
+        log.info("Executing TC :- getAllProductDetailsWithValidEndPoint");
         Response response = Common.hitURrlAndGetResponse("GET","Allproducts","");
         Assert.assertEquals(response.getStatusCode(),200);
         JsonPath get_json = Common.getResponseAsJsonPath(response);

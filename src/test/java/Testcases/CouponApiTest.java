@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-//@Listeners(ExtentListeners.class)
+@Listeners(ExtentListeners.class)
 public class CouponApiTest extends Base {
 
     public static Object coupon_id;
